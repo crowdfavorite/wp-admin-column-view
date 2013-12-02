@@ -60,6 +60,7 @@ class CF_Admin_Column_View {
 			'orderby' => 'menu_order',
 			'post_type' => $post_type,
 			'post_parent' => $parent_id,
+			'posts_per_page' => -1,
 			'status' => array('publish', 'pending', 'draft', 'future', 'private'),
 		));
 		remove_filter('posts_fields', array('CF_Admin_Column_View', 'column_data_fields'));
