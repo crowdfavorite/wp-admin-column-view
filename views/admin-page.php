@@ -26,6 +26,7 @@
 	background: #e8e8e8;
 }
 .cf-admin-column-view-item {
+	border-left: 3px solid #999;
 	border-bottom: 1px solid #eee;
 	cursor: move;
 	overflow: hidden;
@@ -60,6 +61,25 @@
 }
 .cf-admin-column-view-empty {
 	color: #999;
+}
+/* Indicate status */
+.cf-admin-column-view-item-status-draft,
+.cf-admin-column-view-item-status-pending {
+	border-left-color: #999;
+}
+.cf-admin-column-view-item-status-publish {
+	border-left-color: #fff;
+}
+.cf-admin-column-view-item-status-password,
+.cf-admin-column-view-item-status-private {
+	border-left-color: #DD3D36;
+}
+/* for Edit Flow compat */
+.cf-admin-column-view-item-status-approved,
+.cf-admin-column-view-item-status-assigned,
+.cf-admin-column-view-item-status-in-progress,
+.cf-admin-column-view-item-status-pending-review {
+	border-left-color: #999;
 }
 </style>
 

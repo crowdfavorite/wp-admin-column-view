@@ -75,7 +75,7 @@ class CF_Admin_Column_View {
 	}
 	
 	static function column_data_fields($fields) {
-		return 'wp_posts.ID, wp_posts.post_title, wp_posts.post_type, wp_posts.menu_order';
+		return 'wp_posts.ID, wp_posts.post_title, wp_posts.post_type, wp_posts.menu_order, wp_posts.post_status, wp_posts.post_password';
 	}
 	
 	static function column_data_orderby($fields) {
