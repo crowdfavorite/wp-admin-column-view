@@ -1,15 +1,15 @@
-# Admin Column View #
-**Contributors:** alexkingorg, crowdfavorite  
-**Tags:** cms, page, pages, manage, admin, column, view  
-**Requires at least:** 3.7  
-**Tested up to:** 3.7.1  
-**Stable tag:** 1.0  
-**License:** GPLv2  
-**License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
+=== Admin Column View ===
+Contributors: alexkingorg, crowdfavorite
+Tags: cms, page, pages, manage, admin, column, view
+Requires at least: 3.7
+Tested up to: 3.7.1
+Stable tag: 1.0
+License: GPLv2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Adds a columnar view of all your pages (and hierarchical custom post types), similar to the view found in the OS X Finder.
 
-## Description ##
+== Description ==
 
 Adds a columnar view of all your pages (and hierarchical custom post types), similar to the view found in the OS X Finder. Makes it much easier to manage sites with lots of pages/custom post types.
 
@@ -39,34 +39,32 @@ This plugin is provided under the terms of the GPL, including the following:
 > PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,
 > REPAIR OR CORRECTION.
 
-## Installation ##
+== Installation ==
 
 1. Upload the `admin-column-view/ directory` to your `/wp-content/plugins/` directory or install via the WordPress web interface
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Access the Column View for pages (or any hierarchical post type) using the `Column View` admin menu item under that section
 
-## Frequently Asked Questions ##
+== Frequently Asked Questions ==
 
-### Does this show draft posts/pages as well? ###
+= Does this show draft posts/pages as well? =
 
 Yes. Drafts, private posts and published posts/pages are all shown in the list.
 
-### Is this compatible with the WordPress 3.8 admin refresh/MP6 plugin? ###
+= Is this compatible with the WordPress 3.8 admin refresh/MP6 plugin? =
 
 You betcha, it was designed for it.
 
-## Screenshots ##
+== Screenshots ==
 
-###1. In action in WordPress 3.8/MP6.###
-![In action in WordPress 3.8/MP6.](http://s.wordpress.org/extend/plugins/admin-column-view/screenshot-1.png)
+1. In action in WordPress 3.8/MP6.
 
+== Changelog ==
 
-## Changelog ##
-
-### 1.0 ###
+= 1.0 =
 * Initial public release.
 
-## Upgrade Notice ##
+== Upgrade Notice ==
 
-### 1.0 ###
+= 1.0 =
 * Initial public release.
