@@ -1,4 +1,7 @@
-<!-- inline styles and scripts since they are only used on this page -->
+<!--
+inline styles and scripts since they are only used on this page
+no additional HTTP requests needed
+-->
 <style>
 .cf-admin-column-view-wrap {
 	background: #f3f3f3; // needed for back compat, not needed with MP6
@@ -143,6 +146,7 @@ include('column.php');
 
 <script>
 var cfAdminColumnView = {};
+
 cfAdminColumnView.sizeWrap = function() {
 	var $ = jQuery,
 		height = $(window).height() - 200;
@@ -152,6 +156,7 @@ cfAdminColumnView.sizeWrap = function() {
 			.find('.cf-admin-column-view-column').css('height', height + 'px');
 	});
 };
+
 cfAdminColumnView.sortable = function() {
 	var $ = jQuery
 		$cols = $('.cf-admin-column-view-column');
@@ -251,6 +256,6 @@ jQuery(function($) {
 		;
 
 		cfAdminColumnView.sizeWrap();
-	});	
+	});
 });
 </script>
