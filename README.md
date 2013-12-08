@@ -11,7 +11,11 @@ Adds a columnar view of all your pages (and hierarchical custom post types), sim
 
 ## Description ##
 
-Adds a columnar view of all your pages (and hierarchical custom post types), similar to the view found in the OS X Finder. Makes it much easier to manage sites with lots of pages. Use drag and drop to re-order (set the "menu_order" property) your pages.
+Adds a columnar view of all your pages (and hierarchical custom post types), similar to the view found in the OS X Finder. Makes it much easier to manage sites with lots of pages/custom post types.
+
+Use drag and drop to re-order (set the "menu_order" property) your pages/custom post types.
+
+There is a link at each level to create a new page/custom post type at that level.
 
 **Contributing**
 
@@ -21,7 +25,7 @@ https://github.com/alexkingorg/wp-github-activity
 
 **Support**
 
-Support for this plugin will be provided in the form of _Product Support_. This means that I intend to fix any confirmed bugs and improve the user experience when enhancements are identified and can reasonably be accomodated. There is no _User Support_ provided for this plugin. If you are having trouble with this plugin in your particular installation of WordPress, I will not be able to help you troubleshoot the problem.
+Support for this plugin will be provided in the form of _Product Support_. This means that we intend to fix any confirmed bugs and improve the user experience when enhancements are identified and can reasonably be accomodated. There is no _User Support_ provided for this plugin. If you are having trouble with this plugin in your particular installation of WordPress, we will not be able to help you troubleshoot the problem.
 
 This plugin is provided under the terms of the GPL, including the following:
 
@@ -55,9 +59,6 @@ You betcha, it was designed for it.
 
 ###1. In action in WordPress 3.8/MP6.###
 ![In action in WordPress 3.8/MP6.](http://s.wordpress.org/extend/plugins/admin-column-view/screenshot-1.png)
-
-###2. In action in WordPress 3.7.###
-![In action in WordPress 3.7.](http://s.wordpress.org/extend/plugins/admin-column-view/screenshot-2.png)
 
 
 ## Changelog ##
