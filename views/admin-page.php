@@ -1,7 +1,7 @@
 <!-- inline styles and scripts since they are only used on this page -->
 <style>
 .cf-admin-column-view-wrap {
-	background: #eee; // needed for back compat, not needed with MP6
+	background: #f3f3f3; // needed for back compat, not needed with MP6
 	margin: 8px 0 0;
 	min-height: 100px;
 	overflow: auto;
@@ -27,7 +27,7 @@
 }
 .cf-admin-column-view-item {
 	border-left: 3px solid #999;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #f3f3f3;
 	cursor: move;
 	overflow: hidden;
 	position: relative;
@@ -53,7 +53,7 @@
 	padding-left: 7px;
 }
 .cf-admin-column-view-item .edit {
-	background: #eee;
+	background: #f3f3f3;
 	position: absolute;
 	right: -50px;
 	top: 0;
