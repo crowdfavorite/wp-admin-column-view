@@ -11,6 +11,8 @@ License: GPL2
 
 if (!class_exists('CF_Admin_Column_View')) {
 
+load_plugin_textdomain('admin-column-view', false, dirname(plugin_basename(__FILE__)).'/languages/');
+
 add_action('admin_menu', array('CF_Admin_Column_View', 'add_submenu_page'));
 add_action('wp_ajax_cf-admin-column-view-column', array('CF_Admin_Column_View', 'controller_action_column'));
 add_action('wp_ajax_cf-admin-column-view-sort', array('CF_Admin_Column_View', 'controller_action_sort'));
@@ -54,6 +56,8 @@ class CF_Admin_Column_View {
 	}
 	
 	static function column_data($post_type = 'page', $parent_id = 0) {
+		$post_statuses = array('publish', 'pending', 'draft', 'future', 'private');
+		// get column pages
 		add_filter('posts_fields', array('CF_Admin_Column_View', 'column_data_fields'));
 		add_filter('posts_orderby', array('CF_Admin_Column_View', 'column_data_orderby'));
 		$query = new WP_Query(array(
@@ -61,10 +65,35 @@ class CF_Admin_Column_View {
 			'post_type' => $post_type,
 			'post_parent' => $parent_id,
 			'posts_per_page' => -1,
-			'status' => array('publish', 'pending', 'draft', 'future', 'private'),
+			'status' => $post_statuses,
 		));
 		remove_filter('posts_fields', array('CF_Admin_Column_View', 'column_data_fields'));
 		remove_filter('posts_orderby', array('CF_Admin_Column_View', 'column_data_orderby'));
+		// check for sub-pages
+		$has_children = array();
+		if (!empty($query->posts)) {
+			$post_ids = array();
+			foreach ($query->posts as $post) {
+				$post_ids[] = $post->ID;
+			}
+			global $wpdb;
+			$result = $wpdb->get_results($wpdb->prepare("
+				SELECT post_parent
+				FROM $wpdb->posts
+				WHERE post_parent IN (".implode(',', $post_ids).")
+				AND post_type = %s
+				AND post_status IN ('".implode("','", $post_statuses)."')
+				GROUP BY post_parent
+			", $post_type));
+			if (!empty($result)) {
+				foreach ($result as $data) {
+					$has_children[] = $data->post_parent;
+				}
+			}
+			foreach ($query->posts as &$post) {
+				$post->has_children = in_array($post->ID, $has_children);
+			}
+		}
 		$column_data = array(
 			'items' => $query->posts,
 			'nonce' => wp_create_nonce(self::nonce_action_sort($post_type, $parent_id)),

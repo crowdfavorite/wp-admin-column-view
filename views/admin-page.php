@@ -45,6 +45,13 @@
 	display: block;
 	padding: 6px 10px;
 }
+.cf-admin-column-view-item .has-children {
+	color: #bbb;
+	font-size: 150%;
+	font-weight: bold;
+	line-height: 66%;
+	padding-left: 7px;
+}
 .cf-admin-column-view-item .edit {
 	background: #eee;
 	position: absolute;
