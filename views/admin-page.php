@@ -4,7 +4,7 @@ no additional HTTP requests needed
 -->
 <style>
 .cf-admin-column-view-wrap {
-	background: #f3f3f3; // needed for back compat, not needed with MP6
+	background: #f3f3f3; /* needed for back compat, not needed with MP6 */
 	margin: 8px 0 0;
 	min-height: 100px;
 	overflow: auto;
