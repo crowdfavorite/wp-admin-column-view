@@ -1,3 +1,8 @@
+<?php
+
+$post_type_obj = get_post_type_object($column_data['post_type']);
+
+?>
 <div class="cf-admin-column-view-column" data-post_type="<?php echo esc_attr($column_data['post_type']); ?>" data-parent_id="<?php echo esc_attr($column_data['parent_id']); ?>" data-nonce="<?php echo esc_attr($column_data['nonce']); ?>">
 <?php
 
@@ -29,9 +34,15 @@ if (!empty($column_data['items'])) {
 }
 else {
 ?>
-	<div class="cf-admin-column-view-empty"><?php _ex('No child pages', 'empty list label', 'cf-admin-column-view'); ?></div>
+	<div class="cf-admin-column-view-empty"><?php printf(_x('No %s at this level', 'empty list label', 'cf-admin-column-view'), strtolower($post_type_obj->labels->name)); ?></div>
 <?php
 }
 
+$new_link_text = sprintf(
+	_x('New %s Here', 'link in column', 'cf-admin-column-view'),
+	$post_type_obj->labels->singular_name
+);
+
 ?>
+	<a href="<?php echo esc_url(admin_url('post-new.php?post_type='.$column_data['post_type'].'&post_parent='.$column_data['parent_id'])); ?>" class="add"><?php echo $new_link_text; ?></a>
 </div>

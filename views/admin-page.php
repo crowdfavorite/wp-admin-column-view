@@ -16,10 +16,31 @@
 	margin-right: 2px;
 	min-height: 100px;
 	overflow: scroll;
+	padding-bottom: 22px;
 	width: 200px;
 }
 .cf-admin-column-view-column.loading {
 	background: #e8e8e8;
+}
+.cf-admin-column-view-column .add {
+	background-color: #f3f3f3;
+	display: block;
+	font-size: 95%;
+	height: 22px;
+	line-height: 22px;
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+	bottom: 22px;
+	width: 200px;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+.cf-admin-column-view-column .add:hover {
+	background-color: #ddd;
 }
 .cf-admin-column-view-item {
 	border-left: 3px solid #fff;
@@ -59,6 +80,9 @@
 	-ms-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
+}
+.cf-admin-column-view-item .edit:hover {
+	background-color: #ddd;
 }
 .cf-admin-column-view-item:hover .edit {
 	right: 0;
@@ -113,7 +137,7 @@ include('column.php');
 var cfAdminColumnView = {};
 cfAdminColumnView.sizeWrap = function() {
 	var $ = jQuery,
-		height = $(window).height() - 260;
+		height = $(window).height() - 200;
 
 	$('.cf-admin-column-view-wrap').each(function() {
 		$(this).css('height', height + 'px')

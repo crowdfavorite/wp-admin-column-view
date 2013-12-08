@@ -13,9 +13,15 @@ if (!class_exists('CF_Admin_Column_View')) {
 
 load_plugin_textdomain('admin-column-view', false, dirname(plugin_basename(__FILE__)).'/languages/');
 
+// add to menu
 add_action('admin_menu', array('CF_Admin_Column_View', 'add_submenu_page'));
+
+// controllers
 add_action('wp_ajax_cf-admin-column-view-column', array('CF_Admin_Column_View', 'controller_action_column'));
 add_action('wp_ajax_cf-admin-column-view-sort', array('CF_Admin_Column_View', 'controller_action_sort'));
+
+// set post_parent
+add_action('add_meta_boxes', array('CF_Admin_Column_View', 'set_post_parent'));
 
 class CF_Admin_Column_View {
 
@@ -171,6 +177,13 @@ class CF_Admin_Column_View {
 			'result' => 'success',
 		));
 		die();
+	}
+	
+	static function set_post_parent($post_type, $post) {
+		global $post;
+		if (isset($_GET['post_parent'])) {
+			$post->post_parent = intval($_GET['post_parent']);
+		}
 	}
 
 }
