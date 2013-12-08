@@ -100,21 +100,29 @@
 }
 /* Indicate status */
 .cf-admin-column-view-item-status-draft,
-.cf-admin-column-view-item-status-pending {
+.cf-admin-column-view-item-status-pending,
+.cf-admin-column-view-item-status-draft.selected,
+.cf-admin-column-view-item-status-pending.selected {
 	border-left-color: #999;
 }
 .cf-admin-column-view-item-status-publish {
 	border-left-color: #fff;
 }
 .cf-admin-column-view-item-status-password,
-.cf-admin-column-view-item-status-private {
+.cf-admin-column-view-item-status-private,
+.cf-admin-column-view-item-status-password.selected,
+.cf-admin-column-view-item-status-private.selected {
 	border-left-color: #DD3D36;
 }
 /* for Edit Flow compat */
 .cf-admin-column-view-item-status-approved,
 .cf-admin-column-view-item-status-assigned,
 .cf-admin-column-view-item-status-in-progress,
-.cf-admin-column-view-item-status-pending-review {
+.cf-admin-column-view-item-status-pending-review,
+.cf-admin-column-view-item-status-approved.selected,
+.cf-admin-column-view-item-status-assigned.selected,
+.cf-admin-column-view-item-status-in-progress.selected,
+.cf-admin-column-view-item-status-pending-review.selected {
 	border-left-color: #999;
 }
 </style>
