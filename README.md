@@ -21,7 +21,7 @@ There is a link at each level to create a new page/custom post type at that leve
 
 The development home for this plugin is on GitHub. This is where active development happens, along with issue tracking and associated discussions.
 
-https://github.com/alexkingorg/wp-github-activity
+https://github.com/crowdfavorite/wp-admin-column-view
 
 **Support**
 
