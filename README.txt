@@ -58,7 +58,6 @@ You betcha, it was designed for it.
 == Screenshots ==
 
 1. In action in WordPress 3.8/MP6.
-2. In action in WordPress 3.7.
 
 == Changelog ==
 
