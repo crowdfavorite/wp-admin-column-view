@@ -7,11 +7,22 @@ if (!empty($column_data['items'])) {
 		if (!empty($item->post_password)) {
 			$status_class = 'cf-admin-column-view-item-status-password';
 		}
+
 		$has_children = ($item->has_children ? '<span class="has-children">&rsaquo;</span>' : '');
+
+		// create a hint if we're showing an unpublished or private status
+		$hint = '';
+		if ($item->post_status != 'publish') {
+			$hint = _x('Status: not published', 'hover text hint', 'cf-admin-column-view');
+		}
+		if ($item->post_status == 'private' || !empty($item->post_password)) {
+			$hint = _x('Status: private or password-protected', 'hover text hint', 'cf-admin-column-view');
+		}
 ?>
 	<div class="cf-admin-column-view-item <?php echo $status_class; ?>" data-post_id="<?php echo esc_attr($item->ID); ?>" data-post_type="<?php echo esc_attr($item->post_type); ?>">
 		<span class="name"><?php echo esc_html($item->post_title).$has_children; ?></span>
 		<span class="edit"><?php echo edit_post_link(_x('Edit', 'edit item link', 'cf-admin-column-view'), '', '', $item->ID); ?></span>
+		<span class="hint" title="<?php echo esc_attr($hint); ?>"></span>
 	</div>
 <?php
 	}

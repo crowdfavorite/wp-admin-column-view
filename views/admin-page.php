@@ -19,14 +19,10 @@
 	width: 200px;
 }
 .cf-admin-column-view-column.loading {
-/*
-	background: transparent url(<?php echo site_url('wp-includes/images/wpspin-2x.gif'); ?>) center center no-repeat;
-	background-size: 16px 16px;
-*/
 	background: #e8e8e8;
 }
 .cf-admin-column-view-item {
-	border-left: 3px solid #999;
+	border-left: 3px solid #fff;
 	border-bottom: 1px solid #f3f3f3;
 	cursor: move;
 	overflow: hidden;
@@ -34,7 +30,8 @@
 	width: 200px;
 }
 .cf-admin-column-view-item.selected {
-	background: #ccc;
+	background: #ddd;
+	border-left-color: #ddd;
 }
 .cf-admin-column-view-item .name {
 	overflow: hidden;
@@ -65,6 +62,14 @@
 }
 .cf-admin-column-view-item:hover .edit {
 	right: 0;
+}
+.cf-admin-column-view-item .hint {
+	cursor: auto;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 7px;
 }
 .cf-admin-column-view-empty {
 	color: #999;
