@@ -1,0 +1,76 @@
+# Copyright (C) 2013 Admin Column View
+# This file is distributed under the same license as the Admin Column View package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Admin Column View 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/admin-column-view\n"
+"POT-Creation-Date: 2013-12-08 22:48:40+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: admin-column-view.php:36
+msgctxt "name in menu"
+msgid "Column View"
+msgstr ""
+
+#: admin-column-view.php:41
+msgctxt "title on admin page"
+msgid "%1$s Column View"
+msgstr ""
+
+#: admin-column-view.php:53
+msgctxt "random error happened"
+msgid "Whoops!"
+msgstr ""
+
+#: views/column.php:21
+msgctxt "hover text hint"
+msgid "Status: not published"
+msgstr ""
+
+#: views/column.php:24
+msgctxt "hover text hint"
+msgid "Status: private or password-protected"
+msgstr ""
+
+#: views/column.php:29
+msgctxt "edit item link"
+msgid "Edit"
+msgstr ""
+
+#: views/column.php:37
+msgctxt "empty list label"
+msgid "No %s at this level"
+msgstr ""
+
+#: views/column.php:42
+msgctxt "link in column"
+msgid "New %s Here"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Admin Column View"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://crowdfavorite/wordpress/plugins/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Adds a columnar view of all your pages (and hierarchical custom post types), "
+"similar to the view found in the OS X Finder. Makes it much easier to manage "
+"sites with lots of pages. Drag and drop to re-order your pages."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Crowd Favorite"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://crowdfavorite.com/"
+msgstr ""
