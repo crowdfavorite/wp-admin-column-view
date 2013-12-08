@@ -63,10 +63,13 @@ You betcha, it was designed for it.
 
 ## Changelog ##
 
+### 1.0.1 ###
+* (fix) Proper spacing from page title.
+
 ### 1.0 ###
 * Initial public release.
 
 ## Upgrade Notice ##
 
-### 1.0 ###
-* Initial public release.
+### 1.0.1 ###
+* (fix) Proper spacing from page title.
