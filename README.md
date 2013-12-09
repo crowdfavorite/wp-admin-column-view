@@ -3,7 +3,7 @@
 **Tags:** cms, page, pages, manage, admin, column, view  
 **Requires at least:** 3.7  
 **Tested up to:** 3.7.1  
-**Stable tag:** 1.0  
+**Stable tag:** 1.0.2  
 **License:** GPLv2  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -63,6 +63,9 @@ You betcha, it was designed for it.
 
 ## Changelog ##
 
+### 1.0.2 ###
+* (fix) Accept both expected params to `set_post_parent()` method.
+
 ### 1.0.1 ###
 * (fix) Proper spacing from page title.
 
@@ -70,6 +73,9 @@ You betcha, it was designed for it.
 * Initial public release.
 
 ## Upgrade Notice ##
+
+### 1.0.2 ###
+* (fix) Accept both expected params to `set_post_parent()` method.
 
 ### 1.0.1 ###
 * (fix) Proper spacing from page title.
