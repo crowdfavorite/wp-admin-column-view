@@ -3,7 +3,7 @@ Contributors: alexkingorg, crowdfavorite
 Tags: cms, page, pages, manage, admin, column, view
 Requires at least: 3.7
 Tested up to: 3.7.1
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,6 +61,11 @@ You betcha, it was designed for it.
 
 == Changelog ==
 
+= 1.0.3 =
+* (fix) Use `$wpdb->posts` instead of hard-coded wp_posts in SQL query filters. (thanks deckerweb)
+* (fix) Handle some errant scrollbar issues.
+* (fix) Handle positioning of Edit link with/without scrollbars
+
 = 1.0.2 =
 * (fix) Accept both expected params to `set_post_parent()` method.
 
@@ -72,8 +77,7 @@ You betcha, it was designed for it.
 
 == Upgrade Notice ==
 
-= 1.0.2 =
-* (fix) Accept both expected params to `set_post_parent()` method.
-
-= 1.0.1 =
-* (fix) Proper spacing from page title.
+= 1.0.3 =
+* (fix) Use `$wpdb->posts` instead of hard-coded wp_posts in SQL query filters. (thanks deckerweb)
+* (fix) Handle some errant scrollbar issues.
+* (fix) Handle positioning of Edit link with/without scrollbars
