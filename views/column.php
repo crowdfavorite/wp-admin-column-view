@@ -44,5 +44,6 @@ $new_link_text = sprintf(
 );
 
 ?>
+	<div class="spacer"></div>
 	<a href="<?php echo esc_url(admin_url('post-new.php?post_type='.$column_data['post_type'].'&post_parent='.$column_data['parent_id'])); ?>" class="add"><?php echo $new_link_text; ?></a>
 </div>

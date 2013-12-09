@@ -3,7 +3,7 @@
 Plugin Name: Admin Column View
 Plugin URI: http://crowdfavorite/wordpress/plugins/
 Description: Adds a columnar view of all your pages (and hierarchical custom post types), similar to the view found in the OS X Finder. Makes it much easier to manage sites with lots of pages. Drag and drop to re-order your pages.
-Version: 1.0.2
+Version: 1.0.3
 Author: Crowd Favorite
 Author URI: http://crowdfavorite.com/
 License: GPL2
@@ -110,11 +110,13 @@ class CF_Admin_Column_View {
 	}
 	
 	static function column_data_fields($fields) {
-		return 'wp_posts.ID, wp_posts.post_title, wp_posts.post_type, wp_posts.menu_order, wp_posts.post_status, wp_posts.post_password';
+		global $wpdb;
+		return "$wpdb->posts.ID, $wpdb->posts.post_title, $wpdb->posts.post_type, $wpdb->posts.menu_order, $wpdb->posts.post_status, $wpdb->posts.post_password";
 	}
 	
 	static function column_data_orderby($fields) {
-		return 'wp_posts.menu_order, wp_posts.post_title';
+		global $wpdb;
+		return "$wpdb->posts.menu_order, $wpdb->posts.post_title";
 	}
 	
 	static function controller_action_column() {

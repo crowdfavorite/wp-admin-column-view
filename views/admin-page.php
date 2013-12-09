@@ -18,8 +18,8 @@ no additional HTTP requests needed
 	float: left;
 	margin-right: 2px;
 	min-height: 100px;
-	overflow: scroll;
-	padding-bottom: 22px;
+	overflow: auto;
+	overflow-x: hidden;
 	width: 200px;
 }
 .cf-admin-column-view-column.loading {
@@ -27,14 +27,15 @@ no additional HTTP requests needed
 }
 .cf-admin-column-view-column .add {
 	background-color: #f3f3f3;
+	bottom: 0;
 	display: block;
 	font-size: 95%;
 	height: 22px;
 	line-height: 22px;
+	overflow: hidden;
 	position: absolute;
 	text-align: center;
 	text-decoration: none;
-	bottom: 22px;
 	width: 200px;
 	-webkit-transition: all 0.5s ease-out;
 	-moz-transition: all 0.5s ease-out;
@@ -51,7 +52,7 @@ no additional HTTP requests needed
 	cursor: move;
 	overflow: hidden;
 	position: relative;
-	width: 200px;
+	width: 197px;
 }
 .cf-admin-column-view-item.selected {
 	background: #ddd;
@@ -90,6 +91,9 @@ no additional HTTP requests needed
 .cf-admin-column-view-item:hover .edit {
 	right: 0;
 }
+.scroll .cf-admin-column-view-item:hover .edit {
+	padding-right: 14px;
+}
 .cf-admin-column-view-item .hint {
 	cursor: auto;
 	height: 100%;
@@ -100,6 +104,9 @@ no additional HTTP requests needed
 }
 .cf-admin-column-view-empty {
 	color: #999;
+}
+.cf-admin-column-view-column .spacer {
+	height: 20px;
 }
 /* Indicate status */
 .cf-admin-column-view-item-status-draft,
@@ -149,11 +156,23 @@ var cfAdminColumnView = {};
 
 cfAdminColumnView.sizeWrap = function() {
 	var $ = jQuery,
-		height = $(window).height() - 200;
+		height = $(window).height() - 200
+		colContentHeight = 0;
 
 	$('.cf-admin-column-view-wrap').each(function() {
 		$(this).css('height', height + 'px')
-			.find('.cf-admin-column-view-column').css('height', height + 'px');
+			.find('.cf-admin-column-view-column').each(function() {
+				colContentHeight = 0;
+				$(this).removeClass('scroll')
+					.find('.cf-admin-column-view-item').each(function() {
+					colContentHeight += $(this)[0].offsetHeight;
+				});
+				$(this).css('height', height + 'px');
+				// add scroll class if needed
+				if (colContentHeight > height) {
+					$(this).addClass('scroll');
+				}
+			});
 	});
 };
 
