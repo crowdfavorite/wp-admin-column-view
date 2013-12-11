@@ -11,7 +11,7 @@ License: GPL2
 
 if (!class_exists('CF_Admin_Column_View')) {
 
-load_plugin_textdomain('admin-column-view', false, dirname(plugin_basename(__FILE__)).'/languages/');
+load_plugin_textdomain('cf-admin-column-view', false, dirname(plugin_basename(__FILE__)).'/languages/');
 
 // add to menu
 add_action('admin_menu', array('CF_Admin_Column_View', 'add_submenu_page'));
