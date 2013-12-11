@@ -1,0 +1,71 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Admin Column View v1.0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-12-11 17:06-0300\n"
+"PO-Revision-Date: 2013-12-11 17:07-0300\n"
+"Last-Translator: Rafael Funchal <rafaelfunchal@gmail.com>\n"
+"Language-Team: Rafael Funchal <rafaelfunchal@gmail.com>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# @ cf-admin-column-view
+#: admin-column-view.php:36
+msgctxt "name in menu"
+msgid "Column View"
+msgstr "Ver em Coluna"
+
+# @ cf-admin-column-view
+#: admin-column-view.php:41
+#, php-format
+msgctxt "title on admin page"
+msgid "%1$s Column View"
+msgstr "%1$s Ver em Coluna"
+
+# @ cf-admin-column-view
+#: admin-column-view.php:53
+msgctxt "random error happened"
+msgid "Whoops!"
+msgstr "Oops!"
+
+# @ cf-admin-column-view
+#: views/column.php:21
+msgctxt "hover text hint"
+msgid "Status: not published"
+msgstr "Status: Não publicado"
+
+# @ cf-admin-column-view
+#: views/column.php:24
+msgctxt "hover text hint"
+msgid "Status: private or password-protected"
+msgstr "Status: Privado ou Protegido por senha"
+
+# @ cf-admin-column-view
+#: views/column.php:29
+msgctxt "edit item link"
+msgid "Edit"
+msgstr "Editar"
+
+# @ cf-admin-column-view
+#: views/column.php:37
+#, php-format
+msgctxt "empty list label"
+msgid "No %s at this level"
+msgstr "Sem %s nesse nível"
+
+# @ cf-admin-column-view
+#: views/column.php:42
+#, php-format
+msgctxt "link in column"
+msgid "New %s Here"
+msgstr "Criar %s aqui"
