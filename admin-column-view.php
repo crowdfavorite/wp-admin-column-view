@@ -33,6 +33,9 @@ class CF_Admin_Column_View {
 			'show_ui' => true,
 		), 'objects');
 
+		// Allow post types to be filterable
+		$post_types = apply_filters( 'cf_admin_column_post_types', $post_types);
+
 		$menu_label = _x('Column View', 'name in menu', 'cf-admin-column-view');
 
 		foreach ($post_types as $post_type => $post_type_obj) {
