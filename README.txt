@@ -61,6 +61,9 @@ You betcha, it was designed for it.
 
 == Changelog ==
 
+= Dev =
+* (new) Filter (`cf_admin_column_enabled_post_types`) to allow programatic exclusion of column view for certain post types 
+
 = 1.0.3 =
 * (fix) Use `$wpdb->posts` instead of hard-coded wp_posts in SQL query filters. (thanks deckerweb)
 * (fix) Handle some errant scrollbar issues.
