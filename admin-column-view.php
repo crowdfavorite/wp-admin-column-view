@@ -32,9 +32,8 @@ class CF_Admin_Column_View {
 			'hierarchical' => true,
 			'show_ui' => true,
 		), 'objects');
-
 		// Allow post types to be filterable
-		$post_types = apply_filters( 'cf_admin_column_post_types', $post_types);
+		$post_types = apply_filters('cf_admin_column_enabled_post_types', $post_types);
 
 		$menu_label = _x('Column View', 'name in menu', 'cf-admin-column-view');
 
