@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2013-12-17 11:13+0100\n"
+"PO-Revision-Date: 2013-12-18 08:07+0100\n"
 "Last-Translator: Pascal Kläres <pascal.klaeres@lecking-werbeagentur.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: Poedit 1.5.7\n"
@@ -26,7 +26,7 @@ msgstr "%1$s Spaltenansicht"
 #: admin-column-view.php:53
 msgctxt "random error happened"
 msgid "Whoops!"
-msgstr "Whoops!"
+msgstr "Oops!"
 
 #: views/column.php:21
 msgctxt "hover text hint"
@@ -67,10 +67,14 @@ msgid ""
 "similar to the view found in the OS X Finder. Makes it much easier to manage "
 "sites with lots of pages. Drag and drop to re-order your pages."
 msgstr ""
+"Fügt einen Überblick in Spaltenansicht aller Seiten (und hierarchischer "
+"benutzerdefinierter Post-Types) ein. Ähnlich der Ordner-Ansicht im OS-X-"
+"Finder. Dies macht es einfacher, Websiten mit vielen Seiten zu verwalten. "
+"Außerdem können die gelisteten Seiten per Drag & Drop neu angeordnet werden."
 
 #. Author of the plugin/theme
 msgid "Crowd Favorite"
-msgstr ""
+msgstr "Crowd Favorit"
 
 #. Author URI of the plugin/theme
 msgid "http://crowdfavorite.com/"
