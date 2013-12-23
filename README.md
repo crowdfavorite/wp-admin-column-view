@@ -17,6 +17,8 @@ Use drag and drop to re-order (set the "menu_order" property) your pages/custom 
 
 There is a link at each level to create a new page/custom post type at that level.
 
+See a demo in this video: http://youtu.be/IRlJu5MghOw
+
 **Contributing**
 
 The development home for this plugin is on GitHub. This is where active development happens, along with issue tracking and associated discussions.
