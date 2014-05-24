@@ -77,7 +77,7 @@ no additional HTTP requests needed
 .cf-admin-column-view-item .edit {
 	background: #f3f3f3;
 	position: absolute;
-	right: -50px;
+	right: -200px;
 	top: 0;
 	-webkit-transition: all 0.5s ease-out;
 	-moz-transition: all 0.5s ease-out;
