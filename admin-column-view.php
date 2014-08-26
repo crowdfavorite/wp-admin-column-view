@@ -28,7 +28,7 @@ class CF_Admin_Column_View {
 	static function add_submenu_page() {
 
 		// get all hierarchical post types
-		$post_types = get_post_types(array(
+		$post_types = apply_filters('admin_columns_post_types', get_post_types(array(
 			'hierarchical' => true,
 			'show_ui' => true,
 		), 'objects');
