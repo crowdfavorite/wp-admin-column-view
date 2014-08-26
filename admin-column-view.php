@@ -31,7 +31,7 @@ class CF_Admin_Column_View {
 		$post_types = apply_filters('admin_columns_post_types', get_post_types(array(
 			'hierarchical' => true,
 			'show_ui' => true,
-		), 'objects');
+		), 'objects'));
 
 		$menu_label = _x('Column View', 'name in menu', 'cf-admin-column-view');
 
