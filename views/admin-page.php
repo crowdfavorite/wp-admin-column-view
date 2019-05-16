@@ -138,7 +138,6 @@ no additional HTTP requests needed
 </style>
 
 <div class="wrap">
-	<?php screen_icon(); ?>
 	<h2><?php global $title; echo $title; ?></h2>
 	<div class="cf-admin-column-view-wrap">
 		<div class="cf-admin-column-view-content">
